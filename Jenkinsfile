@@ -21,10 +21,5 @@ pipeline {
         echo 'Push image to registry'
       }
     }
-    stage('Create Workspace') {
-      steps {
-        ws(dir: 'test_workspace')
-      }
-    }
   }
 }
