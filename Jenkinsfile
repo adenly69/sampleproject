@@ -21,10 +21,5 @@ pipeline {
         echo 'Push image to registry'
       }
     }
-    stage('Pull docker image') {
-      steps {
-        sh '/usr/bin/docker pull busybox'
-      }
-    }
   }
 }
