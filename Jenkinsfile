@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Pull docker image') {
       steps {
-        sh 'docker pull busybox'
+        sh '/usr/bin/docker pull busybox'
       }
     }
   }
